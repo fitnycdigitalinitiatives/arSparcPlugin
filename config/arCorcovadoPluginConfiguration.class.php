@@ -1,6 +1,6 @@
 <?php
 
-   class arCorcovadoPluginConfiguration extends sfPluginConfiguration
+   class arSparcPluginConfiguration extends sfPluginConfiguration
    {
      public static
        $summary = 'Theme plugin, extension of arDominionPlugin.',
@@ -9,7 +9,7 @@
      public function contextLoadFactories(sfEvent $event)
      {
        $context = $event->getSubject();
-       $context->response->addStylesheet('/plugins/arCorcovadoPlugin/css/min.css', 'last', array('media' => 'all'));
+       $context->response->addStylesheet('/plugins/arSparcPlugin/css/min.css', 'last', array('media' => 'all'));
      }
 
      public function initialize()
