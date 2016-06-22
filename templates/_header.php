@@ -9,7 +9,7 @@
 <header id="top-bar">
 
   <?php if (sfConfig::get('app_toggleLogo')): ?>
-    <?php echo link_to(image_tag('logo', array('alt' => 'AtoM')), '@homepage', array('id' => 'logo', 'rel' => 'home')) ?>
+    <?php echo link_to(image_tag('/plugins/arSparcPlugin/images/sparc.png', array('alt' => __('FIT Special Collections and College Archives'))), '@homepage', array('id' => 'logo', 'rel' => 'home')) ?>
   <?php endif; ?>
 
   <?php if (sfConfig::get('app_toggleTitle')): ?>
@@ -24,11 +24,7 @@
 
     <?php echo get_component('menu', 'quickLinksMenu') ?>
 
-    <?php if (sfConfig::get('app_toggleLanguageMenu')): ?>
-      <?php echo get_component('menu', 'changeLanguageMenu') ?>
-    <?php endif; ?>
-
-    <?php echo get_component('menu', 'clipboardMenu') ?>
+    <?php echo get_component('menu', 'changeLanguageMenu') ?>
 
     <?php echo get_component('menu', 'mainMenu', array('sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID())) ?>
 
