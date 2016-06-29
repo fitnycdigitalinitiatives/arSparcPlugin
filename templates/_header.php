@@ -13,7 +13,7 @@
 		<?php echo link_to(image_tag('/plugins/arSparcPlugin/images/sparc.png', array('alt' => __('FIT Special Collections and College Archives'))), '@homepage', array('class' => 'brand', 'rel' => 'home')) ?>
 		<?php endif; ?>		
 			<ul class="nav">
-			  <?php echo get_component('menu', 'browseMenu') ?>
+			  <?php echo get_component('menu', 'browseMenu', array('sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID())) ?>
 			</ul>
 			<form class="navbar-search pull-left">
 				<input type="text" class="search-query" placeholder="Search">
