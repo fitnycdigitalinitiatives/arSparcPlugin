@@ -13,25 +13,11 @@
 		<?php echo link_to(image_tag('/plugins/arSparcPlugin/images/sparc.png', array('alt' => __('FIT Special Collections and College Archives'))), '@homepage', array('class' => 'brand', 'rel' => 'home')) ?>
 		<?php endif; ?>		
 			<ul class="nav">
-			  <li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-				  Browse
-				  <b class="caret"></b>
-				</a>
-				<ul class="dropdown-menu">
-					<li><a href="#">Archival descriptions</a></li>
-					<li><a href="#">Authority records</a></li>
-					<li><a href="#">Archival institutions</a></li>
-					<li><a href="#">Functions</a></li>
-					<li><a href="#">Subjects</a></li>
-					<li><a href="#">Places</a></li>
-					<li><a href="#">Digital objects</a></li>
-				</ul>			
-			  </li>
-			  <form class="navbar-search pull-left">
-					<input type="text" class="search-query" placeholder="Search">
-			  </form>
+			  <?php echo get_component('menu', 'browseMenu', array('sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID())) ?>
 			</ul>
+			<form class="navbar-search pull-left">
+				<input type="text" class="search-query" placeholder="Search">
+			</form>
 	  </div>
 	</div>
 </div>
