@@ -8,10 +8,10 @@
 
 <div class="navbar navbar-inverse navbar-static-top">
 	<div class="navbar-inner">
+	  <div class="container">
 		<?php if (sfConfig::get('app_toggleLogo')): ?>
 		<?php echo link_to(image_tag('/plugins/arSparcPlugin/images/sparc.png', array('alt' => __('FIT Special Collections and College Archives'))), '@homepage', array('class' => 'brand', 'rel' => 'home')) ?>
 		<?php endif; ?>		
-		  <div class="container">
 			<ul class="nav">
 			  <li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -32,7 +32,7 @@
 					<input type="text" class="search-query" placeholder="Search">
 			  </form>
 			</ul>
-		  </div>
+	  </div>
 	</div>
 </div>
 
