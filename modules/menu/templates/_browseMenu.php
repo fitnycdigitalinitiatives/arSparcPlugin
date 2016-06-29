@@ -1,9 +1,25 @@
-<li class="dropdown" id="browse-menu">
+<div id="browse-menu">
 
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $browseMenu->getLabel(array('cultureFallback' => true)) ?><b class="caret"></b></a>
+  <button class="top-item top-dropdown" data-toggle="dropdown" data-target="#" aria-expanded="false"><?php echo $browseMenu->getLabel(array('cultureFallback' => true)) ?></button>
 
-  <ul class="dropdown-menu">
+  <div class="top-dropdown-container top-dropdown-container-right">
+
+    <div class="top-dropdown-arrow">
+      <div class="arrow"></div>
+    </div>
+
+    <div class="top-dropdown-header">
+      <h2>I'm not the standard menu!</h2>
+    </div>
+
+    <div class="top-dropdown-body">
+      <ul>
         <?php echo QubitMenu::displayHierarchyAsList($browseMenu, 0) ?>
-  </ul>
+      </ul>
+    </div>
 
-</li>
+    <div class="top-dropdown-bottom"></div>
+
+  </div>
+
+</div>
