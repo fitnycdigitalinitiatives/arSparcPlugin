@@ -6,6 +6,35 @@
   </div>
 <?php endif; ?>
 
+<div class="navbar navbar-inverse navbar-static-top">
+	<div class="navbar-inner">
+		<?php if (sfConfig::get('app_toggleLogo')): ?>
+		<?php echo link_to(image_tag('/plugins/arSparcPlugin/images/sparc.png', array('alt' => __('FIT Special Collections and College Archives'))), '@homepage', array('class' => 'brand', 'rel' => 'home')) ?>
+		<?php endif; ?>		
+		<ul class="nav">
+		  <li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			  Browse
+			  <b class="caret"></b>
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="#">Archival descriptions</a></li>
+				<li><a href="#">Authority records</a></li>
+				<li><a href="#">Archival institutions</a></li>
+				<li><a href="#">Functions</a></li>
+				<li><a href="#">Subjects</a></li>
+				<li><a href="#">Places</a></li>
+				<li><a href="#">Digital objects</a></li>
+			</ul>
+			
+			<form class="navbar-search pull-left">
+			  <input type="text" class="search-query" placeholder="Search">
+			</form>
+		  </li>
+		</ul>
+	</div>
+</div>
+
 <header id="top-bar">
 	<div class="container">
 	  <?php if (sfConfig::get('app_toggleLogo')): ?>
