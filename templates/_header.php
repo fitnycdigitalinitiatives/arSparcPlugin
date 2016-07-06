@@ -14,8 +14,9 @@
 		<?php endif; ?>		
 			<ul class="nav">
 			  <?php echo get_component('menu', 'browseMenu', array('sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID())) ?>
+			  <?php echo get_component('menu', 'userMenu') ?>
 			</ul>
-			<form class="navbar-search pull-left">
+			<form class="navbar-search pull-right">
 				<input type="text" class="search-query" placeholder="Search">
 			</form>
 	  </div>
