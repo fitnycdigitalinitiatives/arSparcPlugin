@@ -9,14 +9,20 @@
 <div class="navbar navbar-inverse navbar-static-top">
 	<div class="navbar-inner">
 	  <div class="container">
+	  <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
 		<?php if (sfConfig::get('app_toggleLogo')): ?>
 		<?php echo link_to(image_tag('/plugins/arSparcPlugin/images/sparc.png', array('alt' => __('FIT Special Collections and College Archives'))), '@homepage', array('class' => 'brand', 'rel' => 'home')) ?>
-		<?php endif; ?>		
+		<?php endif; ?>	
+			<div class="nav-collapse collapse">
 			<ul class="nav">
 			  <?php echo get_component('menu', 'browseMenu', array('sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID())) ?>
 			  <?php echo get_component('menu', 'userMenu') ?>
 			</ul>
-			<div>
 			<form class="navbar-search pull-left">
 				<input type="text" class="search-query" placeholder="Search">
 			</form>
