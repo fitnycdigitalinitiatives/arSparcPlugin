@@ -1,4 +1,4 @@
-<li class="dropdown">
+<li class="dropdown" id="browseMenu">
 
   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $browseMenu->getLabel(array('cultureFallback' => true)) ?><b class="caret"></b></a>
 

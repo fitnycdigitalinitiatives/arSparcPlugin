@@ -1,5 +1,5 @@
 <?php if (!$sf_user->isAuthenticated()): ?>
-  <li class="dropdown">
+  <li class="dropdown" id="userMenu">
 
 	  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo __('Log in') ?><b class="caret"></b></a>
 
@@ -25,16 +25,11 @@
   </li>
 
 <?php else: ?>
-  <li class="dropdown">
+  <li class="dropdown" id="userMenu">
 
-	  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $sf_user->user->username ?><b class="caret"></b></a>
+	  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo __('Hi, %1%', array('%1%' => $sf_user->user->username)) ?><b class="caret"></b></a>
 
 	  <ul class="dropdown-menu">
-		<li>
-			<?php echo image_tag($gravatar, array('alt' => '')) ?>&nbsp;
-			<h2><?php echo __('Hi, %1%', array('%1%' => $sf_user->user->username)) ?></h2>
-		</li>
-		<li class="divider"></li>
 		<li><?php echo link_to(__('Profile'), array($sf_user->user, 'module' => 'user')) ?></li>
         <li><?php echo link_to(__('Log out'), array('module' => 'user', 'action' => 'logout')) ?></li>
 	  </ul>
