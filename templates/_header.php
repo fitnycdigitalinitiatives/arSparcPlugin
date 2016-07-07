@@ -22,6 +22,7 @@
 			<ul class="nav">
 			  <?php echo get_component('menu', 'browseMenu', array('sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID())) ?>
 			  <?php echo get_component('menu', 'userMenu') ?>
+			  <?php echo get_component('menu', 'changeLanguageMenu') ?>
 			</ul>
 			<form class="navbar-search pull-left">
 				<input type="text" class="search-query" placeholder="Search">
