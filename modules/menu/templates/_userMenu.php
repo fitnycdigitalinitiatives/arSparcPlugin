@@ -31,9 +31,9 @@
 
 	  <ul class="dropdown-menu">
 	    <?php echo get_component('menu', 'mainMenu', array('sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID())) ?>
+		<li class="divider"></li>
 		<li><?php echo link_to(__('Profile'), array($sf_user->user, 'module' => 'user')) ?></li>
         <li><?php echo link_to(__('Log out'), array('module' => 'user', 'action' => 'logout')) ?></li>
-		<li class="divider"></li>
 	  </ul>
   </li>
 
