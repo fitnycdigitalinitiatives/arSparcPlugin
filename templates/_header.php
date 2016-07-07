@@ -23,7 +23,17 @@
 			  <?php echo get_component('menu', 'browseMenu', array('sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID())) ?>
 			  <?php echo get_component('menu', 'userMenu') ?>
 			  <?php echo get_component('menu', 'changeLanguageMenu') ?>
+			  <?php if ('fr' == $sf_user->getCulture()): ?>
+				<li><?php echo link_to(__('À propos'), array('module' => 'staticpage', 'slug' => 'contact')) ?></li>
+			  <?php elseif ('es' == $sf_user->getCulture(): ?>
+			    <li><?php echo link_to(__('Acera'), array('module' => 'staticpage', 'slug' => 'contact')) ?></li>
+			  <?php elseif ('nl' == $sf_user->getCulture(): ?>
+			    <li><?php echo link_to(__('Over'), array('module' => 'staticpage', 'slug' => 'contact')) ?></li>
+			  <?php elseif ('pt' == $sf_user->getCulture(): ?>
+			    <li><?php echo link_to(__('Sobre'), array('module' => 'staticpage', 'slug' => 'contact')) ?></li>
+			  <?php else: ?>
 			  <li><?php echo link_to(__('About'), array('module' => 'staticpage', 'slug' => 'about')) ?></li>
+			  <?php endif; ?>
 			</ul>
 			<form class="navbar-search pull-left">
 				<input type="text" class="search-query" placeholder="Search">
