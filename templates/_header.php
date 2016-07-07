@@ -35,7 +35,7 @@
 			  <li><?php echo link_to(__('About'), array('module' => 'staticpage', 'slug' => 'about')) ?></li>
 			  <?php endif; ?>
 			</ul>
-			<form class="navbar-search pull-left">
+			<form class="navbar-search pull-right">
 				<input type="text" class="search-query" placeholder="Search">
 			</form>
 			</div>
