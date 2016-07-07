@@ -24,13 +24,13 @@
 			  <?php echo get_component('menu', 'userMenu') ?>
 			  <?php echo get_component('menu', 'changeLanguageMenu') ?>
 			  <?php if ('fr' == $sf_user->getCulture()): ?>
-				<li><?php echo link_to(__('À propos'), array('module' => 'staticpage', 'slug' => 'contact')) ?></li>
+				<li><?php echo link_to(__('À propos'), array('module' => 'staticpage', 'slug' => 'about')) ?></li>
 			  <?php elseif ('es' == $sf_user->getCulture(): ?>
-			    <li><?php echo link_to(__('Acera'), array('module' => 'staticpage', 'slug' => 'contact')) ?></li>
+			    <li><?php echo link_to(__('Acera'), array('module' => 'staticpage', 'slug' => 'about')) ?></li>
 			  <?php elseif ('nl' == $sf_user->getCulture(): ?>
-			    <li><?php echo link_to(__('Over'), array('module' => 'staticpage', 'slug' => 'contact')) ?></li>
+			    <li><?php echo link_to(__('Over'), array('module' => 'staticpage', 'slug' => 'about')) ?></li>
 			  <?php elseif ('pt' == $sf_user->getCulture(): ?>
-			    <li><?php echo link_to(__('Sobre'), array('module' => 'staticpage', 'slug' => 'contact')) ?></li>
+			    <li><?php echo link_to(__('Sobre'), array('module' => 'staticpage', 'slug' => 'about')) ?></li>
 			  <?php else: ?>
 			  <li><?php echo link_to(__('About'), array('module' => 'staticpage', 'slug' => 'about')) ?></li>
 			  <?php endif; ?>
