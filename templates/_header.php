@@ -20,6 +20,7 @@
 		<?php endif; ?>	
 			<div class="nav-collapse collapse">
 			<ul class="nav">
+			  <li class="divider-vertical"></li>
 			  <?php echo get_component('menu', 'browseMenu', array('sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID())) ?>
 			  <?php echo get_component('menu', 'userMenu') ?>
 			  <?php echo get_component('menu', 'changeLanguageMenu') ?>
@@ -35,9 +36,7 @@
 			  <li><?php echo link_to(__('About'), array('module' => 'staticpage', 'slug' => 'about')) ?></li>
 			  <?php endif; ?>
 			</ul>
-			<form class="navbar-search pull-right">
-				<input type="text" class="search-query" placeholder="Search">
-			</form>
+			<?php echo get_component('search', 'box') ?>
 			</div>
 	  </div>
 	</div>
