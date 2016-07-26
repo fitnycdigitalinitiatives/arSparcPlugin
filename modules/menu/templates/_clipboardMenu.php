@@ -11,6 +11,6 @@
 			<?php endif; ?>
 			</li>
 			<li class="divider"></li>
-			<?php echo QubitMenu::displayHierarchyAsList($menu, 0, array('overrideVisibility' => array('admin' => $sf_user->isAdministrator()))) ?>
+			<?php echo QubitMenu::getByName('goToClipboard') ?>
 	  </ul>
 </li>
