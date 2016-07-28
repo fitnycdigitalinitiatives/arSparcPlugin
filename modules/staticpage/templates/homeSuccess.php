@@ -1,9 +1,8 @@
 <?php decorate_with('layout') ?>
 
 
-<div class="page">
   <?php echo render_value($sf_data->getRaw('content')) ?>
-</div>
+
 
 <?php if (QubitAcl::check($resource, 'update')): ?>
   <?php slot('after-content') ?>
