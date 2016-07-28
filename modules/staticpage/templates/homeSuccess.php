@@ -13,24 +13,24 @@
 	  <div class="item active" style="background-image: url('https://fit.vrchost.com/media/get/78243/lb_sc_000150/');">
 		<div class="carousel-caption">
 		  <div class ="container">
-			  <h4>First Thumbnail label</h4>
-			  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			  <a href="http://192.168.99.100/index.php/arsho-baghsarian-shoe-sketches-1963-2008"><h4>First Thumbnail label</h4>
+			  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p></a>
 		  </div>
 		</div>
 	  </div>
 	  <div class="item" style="background-image: url('https://fit.vrchost.com/media/get/80062/lb_sc_000243/');">
 		<div class="carousel-caption">
 		  <div class ="container">
-			  <h4>Second Thumbnail label</h4>
-			  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			  <a href="http://192.168.99.100/index.php/arsho-baghsarian-shoe-sketches-1963-2008"><h4>Second Thumbnail label</h4>
+			  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p></a>
 		  </div>
 		</div>
 	  </div>
 	  <div class="item" style="background-image: url('https://fit.vrchost.com/media/get/77757/lb_sc_000065/');">
 		<div class="carousel-caption">
 		<div class ="container">
-			  <h4>Third Thumbnail label</h4>
-			  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			  <a href="http://192.168.99.100/index.php/arsho-baghsarian-shoe-sketches-1963-2008"><h4>Third Thumbnail label</h4>
+			  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p></a>
 		</div>
 		</div>
 	  </div>
