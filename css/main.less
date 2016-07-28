@@ -102,6 +102,7 @@ html {
 .carousel-inner {
 	height: 100%;
 }
+
 .carousel-inner>.item {
 	height: 100% !important;
 	background-repeat: no-repeat;
@@ -110,4 +111,9 @@ html {
 }
 .item .carousel-caption {
 	bottom: 81px;
+}
+@media (max-width: 480px) {
+  .item .carousel-caption {
+	position: absolute;
+  }
 }

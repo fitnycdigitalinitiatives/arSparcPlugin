@@ -52,7 +52,7 @@
 <script type="text/javascript">
 
 jQuery('.carousel').carousel({
-  interval: 3500,
+  interval: 5000,
   pause: "false"
 })
 </script>
