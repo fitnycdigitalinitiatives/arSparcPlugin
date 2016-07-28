@@ -49,3 +49,9 @@
     </section>
 
 <?php endif; ?>
+<script type="text/javascript">
+$('.carousel').carousel({
+  interval: 3500,
+  pause: "false"
+})
+</script>
