@@ -1,5 +1,7 @@
 <?php decorate_with('layout') ?>
-
+  <?php slot('title') ?>
+	<h1><?php echo render_title($resource->getTitle(array('cultureFallback' => true))) ?></h1>
+  <?php end_slot() ?>
 
   <?php echo render_value($sf_data->getRaw('content')) ?>
 
