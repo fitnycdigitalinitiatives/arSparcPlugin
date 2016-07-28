@@ -50,10 +50,9 @@
 
 <?php endif; ?>
 <script type="text/javascript">
-$(function () {
-	$('.carousel').carousel({
-	  interval: 3500,
-	  pause: "false"
-	})
-});
+
+jQuery('.carousel').carousel({
+  interval: 3500,
+  pause: "false"
+})
 </script>
