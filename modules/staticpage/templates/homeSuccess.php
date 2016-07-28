@@ -10,7 +10,7 @@
 	  <li data-target="#myCarousel" data-slide-to="2" class=""></li>
 	</ol>
 	<div class="carousel-inner">
-	  <div class="item active" style="background-image: url('https://fit.vrchost.com/media/get/62232/lb_sc_000018/');">
+	  <div class="item active" style="background-image: url('https://fit.vrchost.com/media/get/78243/lb_sc_000150/');">
 		<div class="carousel-caption">
 		  <div class ="container">
 			  <h4>First Thumbnail label</h4>
@@ -18,7 +18,7 @@
 		  </div>
 		</div>
 	  </div>
-	  <div class="item" style="background-image: url('https://fit.vrchost.com/media/get/78226/lb_sc_000133/');">
+	  <div class="item" style="background-image: url('https://fit.vrchost.com/media/get/80062/lb_sc_000243/');">
 		<div class="carousel-caption">
 		  <div class ="container">
 			  <h4>Second Thumbnail label</h4>
