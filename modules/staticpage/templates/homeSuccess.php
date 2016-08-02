@@ -1,7 +1,30 @@
 <?php decorate_with('layout') ?>
-  <?php slot('title') ?>
-	<h1><?php echo render_title($resource->getTitle(array('cultureFallback' => true))) ?></h1>
-  <?php end_slot() ?>
+  <div class="row">
+	<div class="span4">
+		<div class="row">
+			<div class="span12">
+			<h1>I'M THE LOGO</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span12">
+			<ul>
+			  <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID) ?>
+			  <?php if ($browseMenu->hasChildren()): ?>
+				<?php foreach ($browseMenu->getChildren() as $item): ?>
+				  <li><a href="<?php echo url_for($item->getPath(array('getUrl' => true, 'resolveAlias' => true))) ?>"><?php echo esc_specialchars($item->getLabel(array('cultureFallback' => true))) ?></a></li>
+				<?php endforeach; ?>
+			  <?php endif; ?>
+			</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span12">
+			<?php echo get_component('default', 'popular', array('limit' => 5, 'sf_cache_key' => $sf_user->getCulture())) ?>
+			</div>
+		</div>
+	</div>
+  </div>
 
   <div id="myCarousel" class="carousel slide">
 	<ol class="carousel-indicators">
@@ -40,15 +63,6 @@
 </div>
 
 
-<?php if (QubitAcl::check($resource, 'update')): ?>
-
-    <section class="actions">
-      <ul>
-        <li><?php echo link_to(__('Edit'), array($resource, 'module' => 'staticpage', 'action' => 'edit'), array('title' => __('Edit this page'), 'class' => 'c-btn')) ?></li>
-      </ul>
-    </section>
-
-<?php endif; ?>
 <script type="text/javascript">
 
 jQuery('.carousel').carousel({
