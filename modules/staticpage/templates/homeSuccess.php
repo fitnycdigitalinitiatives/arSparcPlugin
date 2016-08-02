@@ -1,26 +1,17 @@
 <?php decorate_with('layout') ?>
-  <div class="row">
+  <div class="row-fluid" id="splash">
 	<div class="span4">
-		<div class="row">
+		<div class="row-fluid">
 			<div class="span12">
-			<h1>I'M THE LOGO</h1>
+			<?php echo image_tag('/plugins/arSparcPlugin/images/sparc.png', array('alt' => __('FIT Special Collections and College Archives'))) ?>
 			</div>
 		</div>
-		<div class="row">
-			<div class="span12">
-			<ul>
-			  <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID) ?>
-			  <?php if ($browseMenu->hasChildren()): ?>
-				<?php foreach ($browseMenu->getChildren() as $item): ?>
-				  <li><a href="<?php echo url_for($item->getPath(array('getUrl' => true, 'resolveAlias' => true))) ?>"><?php echo esc_specialchars($item->getLabel(array('cultureFallback' => true))) ?></a></li>
-				<?php endforeach; ?>
-			  <?php endif; ?>
-			</ul>
+		<div class="row-fluid">
+			<div class="span6">
+			I'm something
 			</div>
-		</div>
-		<div class="row">
-			<div class="span12">
-			<?php echo get_component('default', 'popular', array('limit' => 5, 'sf_cache_key' => $sf_user->getCulture())) ?>
+			<div class="span6">
+			I'm somthing
 			</div>
 		</div>
 	</div>
