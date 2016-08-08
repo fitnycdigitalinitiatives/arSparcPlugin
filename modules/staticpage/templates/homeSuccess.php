@@ -1,4 +1,4 @@
-<?php decorate_with('layout') ?>
+<?php decorate_with('layout_wide') ?>
   <div class="row-fluid" id="splash">
 	<div class="span3">
 		<div class="row-fluid">
