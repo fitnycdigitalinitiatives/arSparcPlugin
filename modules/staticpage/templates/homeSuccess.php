@@ -1,19 +1,12 @@
 <?php decorate_with('layout') ?>
   <div class="row-fluid" id="splash">
-	<div class="span4">
-		<div class="row-fluid">
-			<div class="span12">
-			<?php echo image_tag('/plugins/arSparcPlugin/images/sparc.png', array('alt' => __('FIT Special Collections and College Archives'))) ?>
-			</div>
-		</div>
-		<div class="row-fluid">
-			<div class="span6">
-			I'm something
-			</div>
-			<div class="span6">
-			I'm somthing
-			</div>
-		</div>
+	<div class="span3">
+		<ul class="nav nav-list">
+		  <li class="nav-header"><?php echo image_tag('/plugins/arSparcPlugin/images/sparc.png', array('alt' => __('FIT Special Collections and College Archives'))) ?></li>
+		  <li><a href="/index.php/informationobject/browse" title="Archival descriptions"><?php echo __('Archival descriptions') ?></a></li>
+		  <li><a href="/index.php/taxonomy/browse/id/35" title="Subjects"><?php echo __('Subjects') ?></a></li>
+		  <li><a href="/index.php/digitalobject/browse" title="Digital objects"><?php echo __('Digital objects') ?></a></li>
+		</ul>
 	</div>
   </div>
 
