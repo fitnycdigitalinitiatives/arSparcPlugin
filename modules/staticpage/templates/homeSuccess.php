@@ -1,7 +1,7 @@
 <?php decorate_with('layout_wide') ?>
   <div id="splash">	
 	<div class="row-fluid">
-		<div class="span12">
+		<div class="span12" id="logo">
 			<?php echo image_tag('/plugins/arSparcPlugin/images/sparchives.png', array('alt' => __('FIT Special Collections and College Archives'))) ?>
 		</div>
 	</div>
