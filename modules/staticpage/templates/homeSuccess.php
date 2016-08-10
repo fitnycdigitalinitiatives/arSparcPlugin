@@ -2,7 +2,7 @@
   <div id="splash">	
 	<div class="row-fluid">
 		<div class="span6" id="logo">
-			<?php echo image_tag('/plugins/arSparcPlugin/images/sparchives.png', array('alt' => __('FIT Special Collections and College Archives'))) ?>
+			<?php echo image_tag('/plugins/arSparcPlugin/images/sparc_2.png', array('alt' => __('FIT Special Collections and College Archives'))) ?>
 		</div>
 	</div>
 	<div class="row-fluid">
