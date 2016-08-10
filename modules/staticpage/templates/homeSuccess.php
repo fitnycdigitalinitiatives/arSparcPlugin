@@ -7,7 +7,7 @@
 	</div>
 	<div class="row">
 		<div class="span6">
-			<a title="Explore" data-toggle="collapse" href="#explore">Explore the Collection</a>
+			<a title="Explore" data-toggle="collapse" href="#explore">Explore the Collection <i class="icon-chevron-down icon-white pull-right"></i></a>
 		</div>
 	</div>
 	<div id="explore" class="collapse in">
