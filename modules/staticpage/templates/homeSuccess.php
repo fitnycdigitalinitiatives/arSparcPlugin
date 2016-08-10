@@ -10,7 +10,7 @@
 			<a title="Explore" data-toggle="collapse" href="#explore">Explore the Collection <i class="icon-chevron-down icon-white pull-right"></i></a>
 		</div>
 	</div>
-	<div id="explore" class="collapse in">
+	<div id="explore" class="collapse">
 		<div class="row">
 			<div class="span6">
 				<a href="/index.php/informationobject/browse" title="Archival descriptions"><?php echo __('Archival descriptions') ?></a>
