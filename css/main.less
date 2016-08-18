@@ -36,6 +36,9 @@
 html {
 	min-height: 100%;
 }
+a:hover, a:focus {
+	text-decoration: none;
+}
 // Variables
 
 @blue: #0067ac;
@@ -101,7 +104,7 @@ html {
 }
 #splash .span6 a {
 	color: #fff;
-	font-weight: bold;
+	font-variant: small-caps;
 	font-size: 36px;
 	line-height: 54px;
 	display: inline-block;
@@ -143,4 +146,12 @@ html {
   .item .carousel-caption {
 	position: absolute;
   }
+}
+@media (max-width: 1000px) and (orientation: landscape) {
+	#splash #logo {
+		width: 50%;
+	}
+	.explore-dropdown {
+		display: none;
+	}
 }

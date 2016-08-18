@@ -5,28 +5,30 @@
 			<?php echo image_tag('/plugins/arSparcPlugin/images/sparc_2.png', array('alt' => __('FIT Special Collections and College Archives'))) ?>
 		</div>
 	</div>
-	<div class="row">
-		<div class="span6">
-			<a title="Explore" data-toggle="collapse" href="#explore">Explore the Archives <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-		</div>
-	</div>
-	<div id="explore" class="collapse">
-		<div class="row">
-			<div class="span6">
-				<a href="/index.php/informationobject/browse" title="Archival descriptions"><?php echo __('Archival descriptions') ?></a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="span6">
-				<a href="/index.php/taxonomy/browse/id/35" title="Subjects"><?php echo __('Subjects') ?></a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="span6">
-				<a href="/index.php/digitalobject/browse" title="Digital objects"><?php echo __('Digital objects') ?></a>
-			</div>
-		</div>
-	</div>
+  <div id="explore-dropdown">
+  	<div class="row">
+  		<div class="span6">
+  			<a title="Explore" data-toggle="collapse" href="#explore">Explore the Archives <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+  		</div>
+  	</div>
+  	<div id="explore" class="collapse">
+  		<div class="row">
+  			<div class="span6">
+  				<a href="/index.php/informationobject/browse" title="Archival descriptions"><?php echo __('Archival descriptions') ?></a>
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="span6">
+  				<a href="/index.php/taxonomy/browse/id/35" title="Subjects"><?php echo __('Subjects') ?></a>
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="span6">
+  				<a href="/index.php/digitalobject/browse" title="Digital objects"><?php echo __('Digital objects') ?></a>
+  			</div>
+  		</div>
+  	</div>
+  </div>
   </div>
 
   <div id="myCarousel" class="carousel slide">
