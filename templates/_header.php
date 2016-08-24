@@ -17,7 +17,7 @@
       </a>
 		<?php if (sfConfig::get('app_toggleLogo')): ?>
 		<?php echo link_to(image_tag('/plugins/arSparcPlugin/images/sparc.png', array('alt' => __('FIT Special Collections and College Archives'))), '@homepage', array('class' => 'brand', 'rel' => 'home')) ?>
-		<?php endif; ?>	
+		<?php endif; ?>
 			<div class="nav-collapse collapse">
 			<ul class="nav">
 			  <li class="divider-vertical"></li>
@@ -32,7 +32,7 @@
 			  <?php elseif ('nl' == $sf_user->getCulture()): ?>
 				<li><?php echo link_to(__('Over'), array('module' => 'staticpage', 'slug' => 'about')) ?></li>
 			  <?php elseif ('pt' == $sf_user->getCulture()): ?>
-				<li><?php echo link_to(__('Sobre'), array('module' => 'staticpage', 'slug' => 'about')) ?></li>	
+				<li><?php echo link_to(__('Sobre'), array('module' => 'staticpage', 'slug' => 'about')) ?></li>
 			  <?php else: ?>
 			  <li><?php echo link_to(__('About'), array('module' => 'staticpage', 'slug' => 'about')) ?></li>
 			  <?php endif; ?>
@@ -42,15 +42,3 @@
 	  </div>
 	</div>
 </div>
-
-<?php if (sfConfig::get('app_toggleDescription')): ?>
-  <div id="site-slogan">
-    <div class="container">
-      <div class="row">
-        <div class="span12">
-          <span><?php echo esc_specialchars(sfConfig::get('app_siteDescription')) ?></span>
-        </div>
-      </div>
-    </div>
-  </div>
-<?php endif; ?>
