@@ -5,30 +5,28 @@
 			<?php echo image_tag('/plugins/arSparcPlugin/images/sparc_2.png', array('alt' => __('FIT Special Collections and College Archives'))) ?>
 		</div>
 	</div>
-  <div id="explore-dropdown">
-  	<div class="row">
-  		<div class="span6">
-  			<a title="Explore" data-toggle="collapse" href="#explore">Explore the Archives <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-  		</div>
-  	</div>
-  	<div id="explore" class="collapse">
-  		<div class="row">
-  			<div class="span6">
-  				<a href="/index.php/informationobject/browse" title="Archival descriptions"><?php echo __('Archival descriptions') ?></a>
-  			</div>
-  		</div>
-  		<div class="row">
-  			<div class="span6">
-  				<a href="/index.php/taxonomy/browse/id/35" title="Subjects"><?php echo __('Subjects') ?></a>
-  			</div>
-  		</div>
-  		<div class="row">
-  			<div class="span6">
-  				<a href="/index.php/digitalobject/browse" title="Digital objects"><?php echo __('Digital objects') ?></a>
-  			</div>
-  		</div>
-  	</div>
-  </div>
+	<div class="row">
+		<div class="span6">
+			<a title="Explore" data-toggle="collapse" href="#explore">Explore the Archives <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+		</div>
+	</div>
+	<div id="explore" class="collapse">
+		<div class="row">
+			<div class="span6">
+				<a href="/index.php/informationobject/browse" title="Archival descriptions"><?php echo __('Archival descriptions') ?></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span6">
+				<a href="/index.php/taxonomy/browse/id/35" title="Subjects"><?php echo __('Subjects') ?></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span6">
+				<a href="/index.php/digitalobject/browse" title="Digital objects"><?php echo __('Digital objects') ?></a>
+			</div>
+		</div>
+	</div>
   </div>
 
   <div id="myCarousel" class="carousel slide">
@@ -46,7 +44,7 @@
 		  </div>
 		</div>
 	  </div>
-	  <div class="item" style="background-image: url('https://fit.vrchost.com/media/get/76667/lb_sc_000096/');">
+	  <div class="item" style="background-image: url('https://fit.vrchost.com/media/get/66811/ls0001406/');">
 		<div class="carousel-caption">
 		  <div class ="container">
 			  <a href="http://192.168.99.100/index.php/arsho-baghsarian-shoe-sketches-1963-2008"><h4>Second Thumbnail label</h4>
@@ -54,7 +52,7 @@
 		  </div>
 		</div>
 	  </div>
-	  <div class="item" style="background-image: url('https://fit.vrchost.com/media/get/76636/lb_sc_000065/');">
+	  <div class="item" style="background-image: url('https://fit.vrchost.com/media/get/76636/lb_sc_000065/docker ');">
 		<div class="carousel-caption">
 		<div class ="container">
 			  <a href="http://192.168.99.100/index.php/arsho-baghsarian-shoe-sketches-1963-2008"><h4>Third Thumbnail label</h4>
