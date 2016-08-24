@@ -37,7 +37,9 @@
 			  <li><?php echo link_to(__('About'), array('module' => 'staticpage', 'slug' => 'about')) ?></li>
 			  <?php endif; ?>
 			</ul>
-			<?php echo get_component('search', 'box') ?>
+      <div id="search-bar">
+			     <?php echo get_component('search', 'box') ?>
+      </div>
 			</div>
 	  </div>
 	</div>
