@@ -121,6 +121,23 @@ a:hover, a:focus {
 #splash img {
 	width: 100%;
 }
+@media (max-width: 767px) {
+	#splash .span6 a {
+		font-size: 24px;
+		line-height: 36px;
+	}
+	#splash #logo, #splash a {
+		padding: 5px;
+	}
+}
+@media (max-width: 1000px) and (orientation: landscape) {
+	#splash #logo {
+		width: 50%;
+	}
+	#explore-dropdown {
+		display: none;
+	}
+}
 
 // Background Slider
 #myCarousel {
@@ -153,20 +170,7 @@ a:hover, a:focus {
 	position: absolute;
   }
 }
-@media (max-width: 767px) {
-	#splash .span6 a {
-		font-size: 24px;
-		line-height: 36px;
-	}
-	#splash #logo, #splash a {
-		padding: 5px;
-	}
-}
-@media (max-width: 1000px) and (orientation: landscape) {
-	#splash #logo {
-		width: 50%;
-	}
-	#explore-dropdown {
-		display: none;
-	}
+// Facets
+.facet .facet-header a:hover, .facet .open .facet-header a {
+	color: @gray;
 }
