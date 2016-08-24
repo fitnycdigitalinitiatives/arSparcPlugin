@@ -13,7 +13,7 @@
 	<div id="explore" class="collapse">
 		<div class="row">
 			<div class="span6">
-				<a href="/index.php/informationobject/browse" title="Archival descriptions"><?php echo __('Archival descriptions') ?></a>
+				<a href="/index.php/informationobject/browse" title="Archival descriptions"><?php echo __('Collections') ?></a>
 			</div>
 		</div>
 		<div class="row">
