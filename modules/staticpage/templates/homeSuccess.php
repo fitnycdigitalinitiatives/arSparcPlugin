@@ -5,7 +5,7 @@
 			<?php echo image_tag('/plugins/arSparcPlugin/images/sparc_2.png', array('alt' => __('FIT Special Collections and College Archives'))) ?>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row" id="explore-dropdown">
 		<div class="span6">
 			<a title="Explore" data-toggle="collapse" href="#explore">Explore the Archives <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 		</div>
