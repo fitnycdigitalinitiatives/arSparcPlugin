@@ -13,6 +13,14 @@
 	<div id="explore" class="collapse">
 		<div class="row">
 			<div class="span6">
+        <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID) ?>
+        <?php foreach ($browseMenu->getChildren() as $item): ?>
+          <?php if ($item->name == 'browseInformationObjects'): ?>
+            <a href="<?php echo url_for($item->getPath(array('getUrl' => true, 'resolveAlias' => true))) ?>">
+              <?php echo esc_specialchars($item->getLabel(array('cultureFallback' => true))) ?>
+            </a>
+          <?php endif; ?>
+        <?php endforeach; ?>
 				<a href="/index.php/informationobject/browse" title="Archival descriptions"><?php echo __('Collections') ?></a>
 			</div>
 		</div>
