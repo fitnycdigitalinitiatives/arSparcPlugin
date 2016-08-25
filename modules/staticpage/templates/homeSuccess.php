@@ -1,40 +1,30 @@
 <?php decorate_with('layout_wide') ?>
   <div id="splash">
-	<div class="row">
-		<div class="span6" id="logo">
-			<?php echo image_tag('/plugins/arSparcPlugin/images/sparc_2.png', array('alt' => __('FIT Special Collections and College Archives'))) ?>
-		</div>
-	</div>
-	<div class="row" id="explore-dropdown">
-		<div class="span6">
-			<a title="Explore" data-toggle="collapse" href="#explore">Explore the Archives <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-		</div>
-	</div>
-	<div id="explore" class="collapse">
-		<div class="row">
-			<div class="span6">
-        <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID) ?>
-        <?php foreach ($browseMenu->getChildren() as $item): ?>
-          <?php if ($item->name == 'browseInformationObjects'): ?>
-            <a href="<?php echo url_for($item->getPath(array('getUrl' => true, 'resolveAlias' => true))) ?>">
-              <?php echo esc_specialchars($item->getLabel(array('cultureFallback' => true))) ?>
-            </a>
-          <?php endif; ?>
-        <?php endforeach; ?>
-				<a href="/index.php/informationobject/browse" title="Archival descriptions"><?php echo __('Collections') ?></a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="span6">
-				<a href="/index.php/taxonomy/browse/id/35" title="Subjects"><?php echo __('Subjects') ?></a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="span6">
-				<a href="/index.php/digitalobject/browse" title="Digital objects"><?php echo __('Digital objects') ?></a>
-			</div>
-		</div>
-	</div>
+  	<div class="row">
+  		<div class="span6" id="logo">
+  			<?php echo image_tag('/plugins/arSparcPlugin/images/sparc_2.png', array('alt' => __('FIT Special Collections and College Archives'))) ?>
+  		</div>
+  	</div>
+  	<div class="row" id="explore-dropdown">
+  		<div class="span6">
+  			<a title="Explore" data-toggle="collapse" href="#explore">Explore the Archives <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+  		</div>
+  	</div>
+  	<div id="explore" class="collapse">
+
+      <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID) ?>
+      <?php foreach ($browseMenu->getChildren() as $item): ?>
+        <?php if (($item->name == 'browseInformationObjects') or ($item->name == 'browseSubjects') or ($item->name == 'browseDigitalObjects')): ?>
+          <div class="row">
+      			<div class="span6">
+              <a href="<?php echo url_for($item->getPath(array('getUrl' => true, 'resolveAlias' => true))) ?>">
+                <?php echo esc_specialchars($item->getLabel(array('cultureFallback' => true))) ?>
+              </a>
+            </div>
+          </div>
+        <?php endif; ?>
+      <?php endforeach; ?>
+  	</div>
   </div>
 
   <div id="myCarousel" class="carousel slide">
