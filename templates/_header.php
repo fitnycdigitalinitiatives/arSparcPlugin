@@ -1,3 +1,6 @@
+<!-- Start Wrap -->
+<div id="wrap">
+
 <?php echo get_component('default', 'updateCheck') ?>
 
 <?php if ($sf_user->isAdministrator() && (string)QubitSetting::getByName('siteBaseUrl') === ''): ?>

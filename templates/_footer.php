@@ -1,3 +1,7 @@
+  <div id="push"></div>
+<!-- End Wrap -->
+</div>
+
 <footer>
 
   <?php if (QubitAcl::check('userInterface', 'translate')): ?>

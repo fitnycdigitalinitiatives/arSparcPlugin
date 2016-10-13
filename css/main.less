@@ -136,11 +136,22 @@ a:hover, a:focus {
 	display: none;
 }
 
-// Footer
+// Sticky Footer
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -100px;
+}
+
+#push, #footer {
+	height: 100px;
+}
+
 footer {
 	background-color: #3c3c3c;
-	margin-top: 20 px;
-	display: none;
 }
 
 @media (max-width: 767px) {
@@ -151,6 +162,12 @@ footer {
 	#splash #logo, #splash a {
 		padding: 5px;
 	}
+	#footer {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+  }
 }
 @media (max-width: 1000px) and (orientation: landscape) {
 	#splash #logo {
