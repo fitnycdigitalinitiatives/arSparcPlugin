@@ -157,8 +157,6 @@ footer {
 	background-color: #3c3c3c;
 	margin-top: 20px;
 	color: white;
-	padding-top: 14px;
-	padding-bottom: 42px;
 }
 footer .span6 {
 	margin-top: 14px;
@@ -195,7 +193,18 @@ footer ul li a {
 	#splash #logo, #splash a {
 		padding: 5px;
 	}
-	#footer {
+	#wrap {
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+		/* Negative indent footer by it's height */
+		margin: 0 auto -246px;
+	}
+
+	#push, footer {
+		height: 246px;
+	}
+	footer {
 		margin-left: -20px;
 		margin-right: -20px;
 		padding-left: 20px;
