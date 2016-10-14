@@ -9,9 +9,9 @@
   <?php endif; ?>
   <div class="container">
     <?php echo get_component_slot('footer') ?>
-    <div class="row">
+    <div class="row-fluid">
       <div class="span3">
-        <div class="row">
+        <div class="row-fluid">
           <div class="span12">
             <?php echo link_to(image_tag('/plugins/arSparcPlugin/images/FITSUNY1_white.png', array('alt' => __('Fashion Institute of Technology - State University of New York'))), 'http://www.fitnyc.edu/') ?>
           </div>
@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="span9">
-        <div class="row">
+        <div class="row-fluid">
           <div class="span12">
             <p>This site is an initiative of the FIT Library.</p>
           </div>
