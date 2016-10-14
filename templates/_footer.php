@@ -9,8 +9,35 @@
   <?php endif; ?>
   <div class="container">
     <?php echo get_component_slot('footer') ?>
-    <div class="span3">
-      <?php echo link_to(image_tag('/plugins/arSparcPlugin/images/FITSUNY1_white.png', array('alt' => __('Fashion Institute of Technology - State University of New York'))), 'http://www.fitnyc.edu/') ?>
+    <div class="row">
+      <div class="span3">
+        <div class="row">
+          <div class="span12">
+            <?php echo link_to(image_tag('/plugins/arSparcPlugin/images/FITSUNY1_white.png', array('alt' => __('Fashion Institute of Technology - State University of New York'))), 'http://www.fitnyc.edu/') ?>
+          </div>
+          <div class="span12">
+            <p>©2016 Fashion Institute of Technology</br>
+              All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="span9">
+        <div class="row">
+          <div class="span12">
+            <p>This site is an initiative of the FIT Library.</p>
+          </div>
+          <div class="span12">
+            <ul>
+      				<li><a href="http://www.fitnyc.edu/library/"><i class="fa fa-home fa-3x"></i></a></li>
+      				<li><a href="https://www.facebook.com/FITLibrary"><i class="fa fa-facebook fa-3x"></i></a></li>
+      				<li><a href="https://twitter.com/FITLibrary"><i class="fa fa-twitter fa-3x"></i></a></li>
+      				<li><a href="http://pinterest.com/fitlibrary/"><i class="fa fa-pinterest-p fa-3x"></i></a></li>
+      				<li><a href="https://www.instagram.com/fitnyclibrary/"><i class="fa fa-instagram fa-3x"></i></a></li>
+      			</ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
