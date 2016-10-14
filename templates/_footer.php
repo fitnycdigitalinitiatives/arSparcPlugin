@@ -10,11 +10,13 @@
   <div class="container">
     <?php echo get_component_slot('footer') ?>
     <div class="row-fluid">
-      <div class="span3">
+      <div class="span6"  id="copyright">
         <div class="row-fluid">
           <div class="span12">
             <?php echo link_to(image_tag('/plugins/arSparcPlugin/images/FITSUNY1_white.png', array('alt' => __('Fashion Institute of Technology - State University of New York'))), 'http://www.fitnyc.edu/') ?>
           </div>
+        </div>
+        <div class="row-fluid">
           <div class="span12">
             <p>©2016 Fashion Institute of Technology</br>
               All rights reserved.
@@ -22,11 +24,13 @@
           </div>
         </div>
       </div>
-      <div class="span9">
+      <div class="span6" id="social">
         <div class="row-fluid">
           <div class="span12">
             <p>This site is an initiative of the FIT Library.</p>
           </div>
+        </div>
+        <div class="row-fluid">
           <div class="span12">
             <ul>
       				<li><a href="http://www.fitnyc.edu/library/"><i class="fa fa-home fa-3x"></i></a></li>
