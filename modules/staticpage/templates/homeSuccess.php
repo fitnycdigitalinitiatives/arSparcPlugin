@@ -1,4 +1,4 @@
-<?php decorate_with('layout_wide') ?>
+<?php decorate_with('layout') ?>
   <div id="splash">
   	<div class="row">
   		<div class="span6" id="logo">
@@ -6,24 +6,9 @@
   		</div>
   	</div>
   	<div class="row" id="explore-dropdown">
-  		<div class="span6">
-  			<a title="Explore" data-toggle="collapse" href="#explore">Explore the Archives <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+  		<div class="span12">
+  			<?php echo get_component('search', 'box') ?>
   		</div>
-  	</div>
-  	<div id="explore" class="collapse">
-
-      <?php $browseMenu = QubitMenu::getById(QubitMenu::BROWSE_ID) ?>
-      <?php foreach ($browseMenu->getChildren() as $item): ?>
-        <?php if (($item->name == 'browseInformationObjects') or ($item->name == 'browseSubjects') or ($item->name == 'browseDigitalObjects')): ?>
-          <div class="row">
-      			<div class="span6">
-              <a href="<?php echo url_for($item->getPath(array('getUrl' => true, 'resolveAlias' => true))) ?>">
-                <?php echo esc_specialchars($item->getLabel(array('cultureFallback' => true))) ?>
-              </a>
-            </div>
-          </div>
-        <?php endif; ?>
-      <?php endforeach; ?>
   	</div>
   </div>
 
