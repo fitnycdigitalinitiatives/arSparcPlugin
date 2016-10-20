@@ -7,7 +7,7 @@
   	</div>
   	<div class="row" id="explore-dropdown">
   		<div class="span12">
-  			<?php echo get_component('search', 'box') ?>
+  			<?php echo get_component('search', 'homebox') ?>
   		</div>
   	</div>
   </div>
