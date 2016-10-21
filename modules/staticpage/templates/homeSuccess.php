@@ -4,7 +4,7 @@
       <?php echo image_tag('/plugins/arSparcPlugin/images/sparc_connect.png', array('alt' => __('FIT Special Collections and College Archives'))) ?>
     </h1>
     <h2>The archival collections of the FIT Library's Special Collections and College Archives</h2>
-    <form action="<?php echo url_for(array('module' => 'informationobject', 'action' => 'browse')) ?>" data-autocomplete="<?php echo url_for(array('module' => 'search', 'action' => 'autocomplete')) ?>" autocomplete="off">
+    <form class="hero-search" action="<?php echo url_for(array('module' => 'informationobject', 'action' => 'browse')) ?>" data-autocomplete="<?php echo url_for(array('module' => 'search', 'action' => 'autocomplete')) ?>" autocomplete="off">
       <input type="hidden" name="topLod" value="0"/>
       <input type="text" name="query"<?php if (isset($sf_request->query)) echo ' class="focused"' ?> value="<?php echo $sf_request->query ?>" placeholder="<?php echo __('Connect to the Collection') ?>"/>
       <button><i class="fa fa-search" aria-hidden="true"></i></button>
