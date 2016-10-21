@@ -1,21 +1,14 @@
 <?php decorate_with('layout') ?>
-  <div id="splash">
-  	<div class="row">
-  		<div class="span6" id="logo">
-  			<?php echo image_tag('/plugins/arSparcPlugin/images/sparc_2.png', array('alt' => __('FIT Special Collections and College Archives'))) ?>
-  		</div>
-  	</div>
-  	<div class="row" id="explore-dropdown">
-  		<div class="span12">
-        <div id="splash-search" role="search">
-          <form action="<?php echo url_for(array('module' => 'informationobject', 'action' => 'browse')) ?>" data-autocomplete="<?php echo url_for(array('module' => 'search', 'action' => 'autocomplete')) ?>" autocomplete="off">
-            <input type="hidden" name="topLod" value="0"/>
-            <input type="text" name="query"<?php if (isset($sf_request->query)) echo ' class="focused"' ?> value="<?php echo $sf_request->query ?>" placeholder="<?php echo __('Search') ?>"/>
-            <button><i class="fa fa-search" aria-hidden="true"></i></button>
-          </form>
-        </div>
-  		</div>
-  	</div>
+  <div class="hero-unit" id="splash">
+		<h1>
+      <?php echo image_tag('/plugins/arSparcPlugin/images/sparc_2.png', array('alt' => __('FIT Special Collections and College Archives'))) ?>
+    </h1>
+    <h2>The archival collections of the FIT Library's Special Collections and College Archives</h2>
+    <form action="<?php echo url_for(array('module' => 'informationobject', 'action' => 'browse')) ?>" data-autocomplete="<?php echo url_for(array('module' => 'search', 'action' => 'autocomplete')) ?>" autocomplete="off">
+      <input type="hidden" name="topLod" value="0"/>
+      <input type="text" name="query"<?php if (isset($sf_request->query)) echo ' class="focused"' ?> value="<?php echo $sf_request->query ?>" placeholder="<?php echo __('Find Archival Materials') ?>"/>
+      <button><i class="fa fa-search" aria-hidden="true"></i></button>
+    </form>
   </div>
 
   <div id="myCarousel" class="carousel slide">
