@@ -1,7 +1,7 @@
 <?php decorate_with('layout') ?>
   <div class="hero-unit" id="splash">
 		<h1>
-      <?php echo image_tag('/plugins/arSparcPlugin/images/sparc_2.png', array('alt' => __('FIT Special Collections and College Archives'))) ?>
+      <?php echo image_tag('/plugins/arSparcPlugin/images/sparc_connect.png', array('alt' => __('FIT Special Collections and College Archives'))) ?>
     </h1>
     <h2>The archival collections of the FIT Library's Special Collections and College Archives</h2>
     <form action="<?php echo url_for(array('module' => 'informationobject', 'action' => 'browse')) ?>" data-autocomplete="<?php echo url_for(array('module' => 'search', 'action' => 'autocomplete')) ?>" autocomplete="off">

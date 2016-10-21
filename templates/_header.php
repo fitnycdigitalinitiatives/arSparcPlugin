@@ -19,7 +19,7 @@
         <span class="icon-bar"></span>
       </a>
 		<?php if (sfConfig::get('app_toggleLogo')): ?>
-		<?php echo link_to(image_tag('/plugins/arSparcPlugin/images/sparc.png', array('alt' => __('FIT Special Collections and College Archives'))), '@homepage', array('class' => 'brand', 'rel' => 'home')) ?>
+		<?php echo link_to(image_tag('/plugins/arSparcPlugin/images/sparc_connect.png', array('alt' => __('FIT Special Collections and College Archives'))), '@homepage', array('class' => 'brand', 'rel' => 'home')) ?>
 		<?php endif; ?>
 			<div class="nav-collapse collapse">
 			<ul class="nav">
