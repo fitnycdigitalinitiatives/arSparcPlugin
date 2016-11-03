@@ -5,10 +5,10 @@
     </h1>
     <h2>The archival collections of the FIT Library's Special Collections and College Archives</h2>
     <form class="hero-search" action="<?php echo url_for(array('module' => 'informationobject', 'action' => 'browse')) ?>" data-autocomplete="<?php echo url_for(array('module' => 'search', 'action' => 'autocomplete')) ?>" autocomplete="off">
-      <div class="input-group input-group-lg">
+      <div class="input-append">
         <input type="hidden" name="topLod" value="0"/>
-        <input type="text" name="query"<?php if (isset($sf_request->query)) echo ' class="focused"' ?> value="<?php echo $sf_request->query ?>" placeholder="<?php echo __('Connect to the Collection') ?>"/>
-        <button><i class="fa fa-search" aria-hidden="true"></i></button>
+        <input type="text" id="appendedInput" name="query"<?php if (isset($sf_request->query)) echo ' class="focused"' ?> value="<?php echo $sf_request->query ?>" placeholder="<?php echo __('Connect to the Collection') ?>"/>
+        <span class="add-on"><i class="fa fa-search" aria-hidden="true"></i></span>
       </div>
     </form>
   </div>
