@@ -123,7 +123,30 @@ a:hover, a:focus {
 	font-weight: 500;
 	color: white;
 }
+.hero-search .input-append.input-block-level {
+  display: table;
+}
 
+.hero-search .input-append.input-block-level .add-on {
+  display: table-cell;
+  width: 1%; /* remove this if you want default bootstrap button width */
+}
+
+.hero-search .input-append.input-block-level > input {
+  box-sizing: border-box; /* use bootstrap mixin or include vendor variants */
+  -moz-box-sizing: border-box; /* for Firefox */
+  display: table; /* table-cell is not working well in Chrome for small widths */
+  min-height: inherit;
+  width: 100%;
+}
+
+.hero-search .input-append.input-block-level > input {
+  border-right: 0;
+}
+
+.hero-search .input-prepend.input-block-level > input {
+  border-left: 0;
+}
 .home #search-form-wrapper {
 	display: none;
 }
