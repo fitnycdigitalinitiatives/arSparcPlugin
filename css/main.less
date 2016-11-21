@@ -108,6 +108,7 @@ a:hover, a:focus {
 .home .hero-unit {
 	background-color: transparent;
 	margin-top: 20px;
+	margin-bottom: 0;
 }
 .home .hero-unit h1 {
 	margin-left: -3%;
@@ -148,6 +149,16 @@ a:hover, a:focus {
 }
 .home footer, .home #push {
 	display: none;
+}
+// mobile pseudo-fixed home navbar
+@media (max-width: 979px) {
+	.home .hero-unit {
+		position: fixed;
+		top: 51px;
+		left: 20px;
+		right: 20px;
+		z-index: -1;
+	}
 }
 
 // Sticky Footer
