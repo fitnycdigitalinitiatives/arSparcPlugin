@@ -234,20 +234,12 @@ footer ul li a {
 	}
 	/* Homepage */
 	.home .hero-unit {
-		padding: 30px 15px;
+		padding: 15px 15px;
 		margin-top: 0;
 	}
 	.home .hero-unit h2 {
 		font-size: 18px;
 		line-height: 24px;
-	}
-}
-@media (max-width: 1000px) and (orientation: landscape) {
-	#splash #logo {
-		width: 50%;
-	}
-	#explore-dropdown {
-		display: none;
 	}
 }
 
@@ -281,6 +273,12 @@ footer ul li a {
   .item .carousel-caption {
 	position: absolute;
   }
+}
+// For iPhone 5 and lower
+@media (max-width: 600px) and (orientation: landscape) {
+	.carousel-caption {
+		display: none;
+	}
 }
 // Facets
 .facet .facet-header a:hover, .facet.open .facet-header a {
