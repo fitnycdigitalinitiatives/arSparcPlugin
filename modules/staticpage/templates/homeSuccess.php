@@ -12,7 +12,7 @@
       </div>
     </form>
   </div>
-  <?php echo render_value($sf_data->getRaw('content')) ?>
+  <?php echo render_value($sf_data->getRaw('contentX')) ?>
   <?php if (QubitAcl::check($resource, 'update')): ?>
     <section class="actions">
       <ul>
