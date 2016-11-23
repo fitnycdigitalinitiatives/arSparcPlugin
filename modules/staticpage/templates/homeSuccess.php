@@ -13,11 +13,13 @@
     </form>
   </div>
   <?php echo render_value($sf_data->getRaw('content')) ?>
-  <section class="actions">
-    <ul>
-      <li><?php echo link_to(__('Edit'), array($resource, 'module' => 'staticpage', 'action' => 'edit'), array('title' => __('Edit this page'), 'class' => 'c-btn')) ?></li>
-    </ul>
-  </section>
+  <?php if (QubitAcl::check($resource, 'update')): ?>
+    <section class="actions">
+      <ul>
+        <li><?php echo link_to(__('Edit'), array($resource, 'module' => 'staticpage', 'action' => 'edit'), array('title' => __('Edit this page'), 'class' => 'c-btn')) ?></li>
+      </ul>
+    </section>
+  <?php endif; ?>
 
 
 <script type="text/javascript">
