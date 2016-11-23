@@ -61,6 +61,10 @@ a:hover, a:focus {
 @navbarInverseLinkColor: @white;
 @topBarButtonHoverColor: @blue;
 
+.navbar-static-top {
+	position: relative;
+	z-index: 2;
+}
 .navbar .brand {
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -112,6 +116,8 @@ a:hover, a:focus {
 	background-color: transparent;
 	margin-top: 20px;
 	margin-bottom: 0;
+	position: relative;
+	z-index: 1;
 }
 .home .hero-unit h1 {
 	margin-left: -3%;
@@ -160,7 +166,7 @@ a:hover, a:focus {
 		top: 51px;
 		left: 20px;
 		right: 20px;
-		z-index: -1;
+		z-index: 1;
 	}
 }
 
@@ -260,11 +266,11 @@ footer ul li a {
 // Background Slider
 #myCarousel {
 	position: fixed;
-    width:100%;
-    height:100% !important;
-    top:51px;
-    left:0;
-	z-index: -1000;
+  width:100%;
+  height:100% !important;
+  top:51px;
+  left:0;
+	z-index: 0;
 }
 .carousel-inner {
 	height: 100%;
