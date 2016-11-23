@@ -12,40 +12,12 @@
       </div>
     </form>
   </div>
-
-  <div id="myCarousel" class="carousel slide">
-	<ol class="carousel-indicators">
-	  <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-	  <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-	  <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-	</ol>
-	<div class="carousel-inner">
-	  <div class="item active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://fit.vrchost.com/media/get/77122/lb_sc_000150/');">
-		<div class="carousel-caption">
-		  <div class ="container">
-			  <a href="http://192.168.99.100/index.php/arsho-baghsarian-shoe-sketches-1963-2008"><h4>First Thumbnail label</h4>
-			  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p></a>
-		  </div>
-		</div>
-	  </div>
-	  <div class="item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://fit.vrchost.com/media/get/66811/ls0001406/');">
-		<div class="carousel-caption">
-		  <div class ="container">
-			  <a href="http://192.168.99.100/index.php/arsho-baghsarian-shoe-sketches-1963-2008"><h4>Second Thumbnail label</h4>
-			  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p></a>
-		  </div>
-		</div>
-	  </div>
-	  <div class="item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://fit.vrchost.com/media/get/76636/lb_sc_000065/');">
-		<div class="carousel-caption">
-		<div class ="container">
-			  <a href="http://192.168.99.100/index.php/arsho-baghsarian-shoe-sketches-1963-2008"><h4>Third Thumbnail label</h4>
-			  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p></a>
-		</div>
-		</div>
-	  </div>
-	</div>
-</div>
+  <?php echo render_value($sf_data->getRaw('content')) ?>
+  <section class="actions">
+    <ul>
+      <li><?php echo link_to(__('Edit'), array($resource, 'module' => 'staticpage', 'action' => 'edit'), array('title' => __('Edit this page'), 'class' => 'c-btn')) ?></li>
+    </ul>
+  </section>
 
 
 <script type="text/javascript">
