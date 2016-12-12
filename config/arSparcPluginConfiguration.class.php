@@ -3,7 +3,7 @@
    class arSparcPluginConfiguration extends sfPluginConfiguration
    {
      public static
-       $summary = 'Theme plugin, extension of arDominionPlugin.',
+       $summary = 'Theme plugin for Sparc Connect, extension of arDominionPlugin.',
        $version = '0.0.1';
 
      public function contextLoadFactories(sfEvent $event)

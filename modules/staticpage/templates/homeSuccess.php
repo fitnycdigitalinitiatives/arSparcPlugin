@@ -12,7 +12,7 @@
       </div>
     </form>
   </div>
-
+  <!-- Begin Bootstrap Carousel http://getbootstrap.com/2.3.2/javascript.html#carousel -->
   <div id="myCarousel" class="carousel slide">
     <ol class="carousel-indicators">
     	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -60,7 +60,7 @@
 <script type="text/javascript">
 
 jQuery('.carousel').carousel({
-  interval: 5000,
+  interval: 8000,
   pause: "false"
 })
 </script>
