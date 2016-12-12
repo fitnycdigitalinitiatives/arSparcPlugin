@@ -60,7 +60,7 @@
 <script type="text/javascript">
 
 jQuery('.carousel').carousel({
-  interval: 8000,
+  interval: 6000,
   pause: "false"
 })
 </script>
