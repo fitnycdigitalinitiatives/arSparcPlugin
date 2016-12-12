@@ -20,29 +20,37 @@
     	<li data-target="#myCarousel" data-slide-to="2" class=""></li>
     </ol>
     <div class="carousel-inner">
-    	<div class="item active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://fit.vrchost.com/media/get/77122/lb_sc_000150/');">
-    	<div class="carousel-caption">
-    		<div class ="container">
-    			<a href="http://192.168.99.100/index.php/arsho-baghsarian-shoe-sketches-1963-2008"><h4>First Thumbnail label</h4>
-    			<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p></a>
-    		</div>
+    	<div class="item active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/plugins/arSparcPlugin/images/carnegie_homepage.jpg');">
+      	<div class="carousel-caption">
+      		<div class ="container">
+      			<a href="/hattie-carnegie-sketches-1940-5"><h4>Hattie Carnegie Sketches, 1940-1955</h4>
+      			<p>Sketch of black day suit with flaired jacket and fitted skirt, c. 1951</p></a>
+      		</div>
+      	</div>
     	</div>
+      <div class="item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/plugins/arSparcPlugin/images/dejuan_homepage.jpg');">
+      	<div class="carousel-caption">
+      		<div class ="container">
+      			<a href="/eric-de-juan-sketch-collection-1927-1990"><h4>Eric de Juan sketch collection, 1927-1989</h4>
+      			<p>Original sketch by Eric de Juan for Josephine Baker's stage costumes, 1949</p></a>
+      		</div>
+      	</div>
     	</div>
-    	<div class="item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://fit.vrchost.com/media/get/66811/ls0001406/');">
-    	<div class="carousel-caption">
-    		<div class ="container">
-    			<a href="http://192.168.99.100/index.php/arsho-baghsarian-shoe-sketches-1963-2008"><h4>Second Thumbnail label</h4>
-    			<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p></a>
-    		</div>
+      <div class="item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/plugins/arSparcPlugin/images/daren_homepage.jpg');">
+      	<div class="carousel-caption">
+      		<div class ="container">
+      			<h4>Mr. Daren sketch collection 1940-1949</h4>
+      			<p>Fashion sketches of three women in day suits black, white and green day suits, 1943</p>
+      		</div>
+      	</div>
     	</div>
-    	</div>
-    	<div class="item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://fit.vrchost.com/media/get/76636/lb_sc_000065/');">
-    	<div class="carousel-caption">
-    	<div class ="container">
-    			<a href="http://192.168.99.100/index.php/arsho-baghsarian-shoe-sketches-1963-2008"><h4>Third Thumbnail label</h4>
-    			<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p></a>
-    	</div>
-    	</div>
+      <div class="item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/plugins/arSparcPlugin/images/lucile_homepage.jpg');">
+      	<div class="carousel-caption">
+      		<div class ="container">
+      			<a href="/lucile-ltd-records-1910-1927"><h4>Lucile, Ltd., records, 1910-1927</h4>
+      			<p>Original sketch of ladies black satin evening gown with bustle treatment, c. 1927</p></a>
+      		</div>
+      	</div>
     	</div>
     </div>
   </div>
