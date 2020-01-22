@@ -18,7 +18,7 @@
         </div>
         <div class="row-fluid">
           <div class="span12">
-            <p>©2016 Fashion Institute of Technology</br>
+            <p>&copy;<?php echo date("Y"); ?> Fashion Institute of Technology</br>
               All rights reserved.
             </p>
           </div>
