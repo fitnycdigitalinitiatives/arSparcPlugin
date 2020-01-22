@@ -13,7 +13,7 @@
       <div class="span6"  id="copyright">
         <div class="row-fluid">
           <div class="span12">
-            <?php echo link_to(image_tag('/plugins/arSparcPlugin/images/FITSUNY1_white.png', array('alt' => __('Fashion Institute of Technology - State University of New York'))), 'http://www.fitnyc.edu/') ?>
+            <?php echo link_to(image_tag('/plugins/arSparcPlugin/images/fit-wordmark.png', array('alt' => __('Fashion Institute of Technology - State University of New York'))), 'http://www.fitnyc.edu/') ?>
           </div>
         </div>
         <div class="row-fluid">
