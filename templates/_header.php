@@ -29,7 +29,6 @@
 			  <?php echo get_component('menu', 'browseMenu', array('sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID())) ?>
 			  <?php echo get_component('menu', 'userMenu') ?>
 			  <?php echo get_component('menu', 'changeLanguageMenu') ?>
-			  <?php echo get_component('menu', 'clipboardMenu') ?>
 			  <?php if ('fr' == $sf_user->getCulture()): ?>
 				<li><?php echo link_to(__('À propos'), array('module' => 'staticpage', 'slug' => 'about')) ?></li>
 			  <?php elseif ('es' == $sf_user->getCulture()): ?>
@@ -41,6 +40,7 @@
 			  <?php else: ?>
 			  <li><?php echo link_to(__('About'), array('module' => 'staticpage', 'slug' => 'about')) ?></li>
 			  <?php endif; ?>
+        <?php echo get_component('menu', 'clipboardMenu') ?>
 			</ul>
       <div id="search-bar">
 			     <?php echo get_component('search', 'box') ?>
